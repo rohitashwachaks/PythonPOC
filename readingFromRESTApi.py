@@ -4,7 +4,7 @@ import requests
 
 r = requests.get('https://reqres.in/api/users',verify=False)
 if r.status_code != 200:
-    print("Error GET /tasks/ {}".format(resp.status_code))
+    print("Error GET /tasks/ {}".format(r.status_code))
 
 names = []
 
