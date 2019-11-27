@@ -6,3 +6,6 @@ angleBetweenClockArms.py:
   
 readingFromRESTApi.py:
   read JSON from the get method of an API and create a list of all the names(first name and last name) in the input
+  
+tictactoepvp.py:
+  the classic game game of tic-tac-toe, player vs player
