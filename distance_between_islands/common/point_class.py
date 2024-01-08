@@ -1,11 +1,14 @@
+from dataclasses import dataclass
+
+
 @dataclass
 class Point(tuple):
     def __init__(self, x, y):
         self.x = x
         self.y = y
 
-    def __new__(self, x, y):
-        return tuple.__new__(self, (x, y))
+    def __new__(cls, x, y):
+        return tuple.__new__(cls, (x, y))
 
     def __hash__(self):
         return hash((self.x, self.y))
