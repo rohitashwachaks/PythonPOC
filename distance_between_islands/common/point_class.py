@@ -18,3 +18,6 @@ class Point(tuple):
 
     def __str__(self):
         return f"Point({self.x}, {self.y})"
+
+    def __repr__(self):
+        return tuple({self.x}, {self.y})
